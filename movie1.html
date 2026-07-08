@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap" rel="stylesheets">
+
 <style>
     body {
         background: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 100%);
@@ -7,6 +9,57 @@
         text-align: center;
         min-height: 100vh;
     }
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1100px;
+        margin: 0 auto 40px auto;
+        gap: 30px;
+    }
+    .nav-links {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+    }
+    .nav-links a {
+        color: #ccc;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        transition: color 0.2s ease;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+        color: #feca57
+    }
+
+    .logo {
+        font-family: 'righteous', sans-serif;
+        font-size: 28px;
+        color: #feca57;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    .search-bar {
+        flex: 1;
+        max-width: 350px;
+        padding: 12px 22px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        background-color: #1e1e30;
+        color: white;
+        font-size: 16px;
+    }
+    .search-bar::placeholder {
+        color: #777;
+    }
+
+
     .info {
         max-width: 700px;
         margin: 0 auto 30px auto;
@@ -54,6 +107,15 @@
         color: #ff6b6b;
     }
 </style>
+<div class="header">
+        <a href="index.html" class="logo">MILO>GE</a>
+        <ul class="nav-links">
+            <li><a href="index.html class="active">Movies</a></li>
+            <li><a href="letterbox.html">LetterBox</a></li>
+            <li><a href="tvshows.html">TV Shows</a></li>
+        </ul>
+        <input type="text" class="search-bar" placeholder="search movie...">
+    </div>
 
 <div class="info">
     <img src="posters/movie1.jpg">
